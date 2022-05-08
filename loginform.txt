@@ -1,0 +1,32 @@
+<?php 
+    $host="localhost";
+    $user="root";
+    $password="";
+    $db="demo";
+
+    mysql_connect($host,$user,$password)
+    $mysql_select_db($db);
+
+    if(isset(['User Name'])){
+        $uname=$_POST['User Name'];
+        $password=$_post['Password'];
+
+        $sql="select * from login.php where UserName='".$uname."'AND Passowrd='".$password. "'limit 1";
+        $result=mysql_query($sql);
+
+     if(mysql_num_rows($result)==1){
+         echo"YOU HAVE SUCCESSFULLY LOGGED IN";
+         exit();
+     }
+     else{
+         echo"YOU HAVE ENTERED INCORRECT PASSWORD";
+         exit();
+     }
+
+
+    }
+
+
+
+
+?>

@@ -1,0 +1,76 @@
+<html>
+
+<head>
+	<title>quiz-3</title>
+        <meta charset="utf-8">
+        <title>Page</title>
+        <meta name="viewport" content="width=device=width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/bar.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+              $('ul').toggleClass ('show');
+                });
+            });
+        </script>
+    
+    <style>
+        .btn {
+            padding: 5px;
+            background-color: goldenrod;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        input[type=reset] {
+            padding: 5px;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+	<nav>
+            <label class="logo">Mental Health</label>
+            <ul>
+               <!-- <li><a  href="quiz 1.html">Home</a></li>-->
+                <li><a href="home.html">Discover</a></li>
+                <li><a href="forgot.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+				<li><a href="logout.php">Logout</a></li>
+                
+            </ul>
+
+            
+        
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    <br>
+    <form>
+        OVER THE LAST TWO WEEKS HAVE YOU FELT DOWN, DEPRESSED OR HOPELESS? <BR><br>
+        <input type="radio" name="QUES" value="Extremely"> Extremely
+        <br>
+        <input type="radio" name="subject" value="Considerably"> Considerably
+        <br>
+        <input type="radio" name="subject" value="Slightly"> Slightly
+        <br>
+        <input type="radio" name="subject" value="Not at all"> Not at all<br><br>
+
+        <a href="quiz4.html" class="btn">Submit</a>
+        <input type="reset" name="reset" value="Reset" />
+
+
+    </form>
+</body>
+
+</html>

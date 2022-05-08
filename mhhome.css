@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: #009688;
+    font-family: sans-serif;
+    font-weight: 400;
+
+} 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+.custom-box{
+    max-width:700px ;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius:10px ;
+
+}
+
+.custom-box:: before,
+.custom-box:: aftetr{
+    content: '';
+    clear: both;
+    display: table;
+}
+.home-box h3{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom:15px;
+    line-height: 25px;
+}
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+
+}
+.home-box p span{
+    font-weight: 500;
+}
+
+.home-box .btn{
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 15px 45px;
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box  .option-container
+.quiz-box   .next-question-btn,
+
+.quiz-box .question-number{
+    font-size: 18px;
+    color: #009688;
+    font-weight: 600;
+    border: 1px solid #cccccc;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+.quiz-box  .question-text{
+    font-size: 22px;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+.quiz-box   .option-container{
+
+    
+    
+}
+.quiz-box   .option-container .option{
+    background-color: #cccccc;
+    padding:13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;   
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 13cm;
+
+}
+
+
+.quiz-box .btn{
+    margin: 15px;
+}
+.result-box{
+    text-align:  right;
+
+}
+.result-box .hide{
+    display: none;
+}
+.result-box h1{
+    font-size: 40px;
+    line-height: 48px;
+    color: #009688;
+
+}
+.result-box .btn{
+    margin-right:  20px;  
+}
